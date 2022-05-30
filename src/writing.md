@@ -4,7 +4,7 @@ title: Writing
 templateEngineOverride: njk,md
 ---
 
-<section class="writing">
+<section class="writing-page">
 
 <a href="/" class="text_small">← Back home</a>
 

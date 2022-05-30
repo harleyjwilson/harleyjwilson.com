@@ -115,7 +115,7 @@ p {
 
 a,
 a:visited {
-  display: block;
+  display: inline-block;
   color: var(--link-colour);
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -133,13 +133,20 @@ a:hover {
   margin-top: 4rem;
 }
 
-.writing ul {
+.writing ul,
+.writing-page ul {
   list-style: none;
 }
 
-.writing li {
+.writing li,
+.writing-page li {
   display: flex;
   justify-content: space-between;
+}
+
+.writing-page p {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .writing-title {
@@ -201,11 +208,11 @@ a:hover {
   border-top: 1px dashed rgba(255, 255, 255, 0.4);
   border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
   margin: 1rem 0;
-  padding: 0 0 1rem 0;
+  padding: 0.5rem 0 1.5rem 0;
 }
 
 .post-title {
-  margin: 2rem 0 0 0;
+  margin: 2rem 0 1rem 0;
 }
 
 @media (max-width: 490px) {
