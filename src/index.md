@@ -32,19 +32,22 @@ I'm a developer from Perth, Western Australia. I am currently studying for a Bac
 
 Feel free to reach out and connect.
 
-<ul>
-    <li>
+<div class="connect-grid">
+    <div class="top-left">
         <div>Twitter</div>
         <a href="https://twitter.com/harleyjwilson" target="_blank">@harleyjwilson</a>
-    </li>
-    <li>
+    </div>
+    <div class="bottom-left">
         <div>Email</div>
         <a href="mailto:harleyjwilson@gmail.com" target="_blank">harleyjwilson@gmail.com</a>
-    </li>
-    <li>
+    </div>
+    <div class="top-right">
         <div>Github</div>
         <a href="https://github.com/harleyjwilson" target="_blank">harleyjwilson</a>
-    </li>
-</ul>
-
+    </div>
+    <div class="bottom-right">
+        <div>LinkedIn</div>
+        <a href="https://www.linkedin.com/in/harleyjwilson/" target="_blank">harleyjwilson</a>
+    </div>
+</div>
 </section>
