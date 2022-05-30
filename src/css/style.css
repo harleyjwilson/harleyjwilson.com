@@ -215,6 +215,11 @@ a:hover {
   margin: 2rem 0 1rem 0;
 }
 
+.post ul li {
+  list-style: "- ";
+  margin-left: 0.75em;
+}
+
 @media (max-width: 490px) {
   main {
     padding: 2rem 1.5rem;
