@@ -1,0 +1,18 @@
+<ul>
+{% for post in collections.posts | reverse %}
+{% if page.url == "/" %}
+{% if loop.index <= 3 %}
+<li>
+<div><a href="{{ post.url }}">{{ post.data.title }}</a></div><div class="post-date">{{ post.data.date | shortDate }}</div>
+</li>
+{% endif %}
+{% else %}
+<li>
+<div><a href="{{ post.url }}">{{ post.data.title }}</a></div><div class="post-date">{{ post.data.date | shortDate }}</div>
+</li>
+{% endif %}
+{% else %}
+</ul>
+The collection is empty.
+{% endfor %}
+</ul>

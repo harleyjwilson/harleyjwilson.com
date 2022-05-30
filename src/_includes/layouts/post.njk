@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+---
+
+<a href="/writing/" class="text_small">← Back to writing</a>
+
+<h1 class="post-title">{{ title }}</h1>
+
+<p>{{ description }}</p>
+
+{{ page.date | readableDate }}
+  
+<article class="post">
+
+{{ content | safe }}
+
+</article>
+
+<section class="bottom-post-nav">
+
+{%- if collections.posts %}
+{%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+{%- if nextPost or previousPost %}
+
+<ul>
+  {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+  {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
+</ul>
+</section>
+{%- endif %}
+{%- endif %}
