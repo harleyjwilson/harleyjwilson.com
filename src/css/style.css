@@ -27,8 +27,12 @@ img {
   --heading-color: #dee2e6;
   --font-colour: #e5e5e5;
   --link-colour: var(--font-colour);
+  --link-underline: rgba(255, 255, 255, 0.1);
+  --link-underline-hover: rgba(255, 255, 255, 0.4);
   --font-colour-dim: #dbdbdb;
   --post-dash: var(--font-colour-dim);
+  --post-border: rgba(255, 255, 255, 0.4);
+  --post-date: rgba(255, 255, 255, 0.5);
   --body-colour: #1c1c1c;
 }
 
@@ -119,13 +123,13 @@ a:visited {
   color: var(--link-colour);
   text-decoration: underline;
   text-decoration-thickness: 2px;
-  text-decoration-color: rgba(255, 255, 255, 0.1);
+  text-decoration-color: var(--link-underline);
   text-underline-position: under;
   transition: text-decoration-color 100ms;
 }
 
 a:hover {
-  text-decoration-color: rgba(255, 255, 255, 0.4);
+  text-decoration-color: var(--link-underline-hover);
   cursor: grab;
 }
 
@@ -205,10 +209,14 @@ a:hover {
 }
 
 .post {
-  border-top: 1px dashed rgba(255, 255, 255, 0.4);
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
+  border-top: 1px dashed var(--post-border);
+  border-bottom: 1px dashed var(--post-border);
   margin: 1rem 0;
   padding: 0.5rem 0 1.5rem 0;
+}
+
+.post-date {
+  color: var(--post-date);
 }
 
 .post-title {
